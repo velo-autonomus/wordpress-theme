@@ -1,0 +1,54 @@
+.goal {
+    display: flex;
+}
+
+.goal .progress {
+    width: 5%;
+}
+
+.goal .progress svg {
+    height: 100%;
+}
+
+.goal .progress svg rect:not(.reached) {
+    y: -2;
+}
+
+.goal:not(.reached) .progress svg rect.reached {
+    display: none;
+}
+
+.goal.upper .progress svg rect:not(.reached) {
+    fill: black;
+}
+
+.goal.reached .progress svg circle.outer {
+    fill: black;
+}
+
+.goal .content {
+    margin-left: 10px;
+}
+
+.goal .content h2 {
+    margin-bottom: 5px;
+}
+
+.goal .content h2.ghost {
+    height: 1em;
+    background: #dadada;
+    width: 12em;
+}
+
+.goal .content a {
+    text-decoration: underline;
+    color: black;
+}
+
+.goal .content .description.ghost {
+    background-color: #e7e7e7;
+    margin-bottom: 5px;
+    height: 1.2em;
+    width: 12em;
+}
+
