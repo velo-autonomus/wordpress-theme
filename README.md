@@ -4,7 +4,6 @@
 This is the official Wordpress-Theme of https://velo-autonomus.de
 
 ## License
-This theme is licensed under the GNU General Public License 
 Copyright (C) 2020 Moritz Ahrens
 
 This program is free software: you can redistribute it and/or modify
