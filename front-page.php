@@ -25,7 +25,16 @@ get_header()
             ?>
             <div class='section-text<?php if((empty(get_the_title())) OR (get_post_custom_values('_velo_home_section_type', get_the_ID())[0]=='center')){ echo ' center'; }?>'>
                 <h1><?php the_title();?></h1>
-                <?php the_content();?>
+                
+                <?php 
+                if(get_post_custom_values('_velo_home_section_type', get_the_ID())[0]=='supporters') {
+                    echo '<div class="logos">';
+                }
+                the_content();
+                if(get_post_custom_values('_velo_home_section_type', get_the_ID())[0]=='supporters') {
+                    echo '</div>';
+                }
+                ?>
             </div>
             <?php
             }

@@ -4,6 +4,10 @@ section {
     height: 75vh;
 }
 
+section p {
+    font-size: 1.1rem;
+}
+
 section#onboarding {
     height: 100vh;
 }
@@ -82,4 +86,78 @@ section.only-text .section-text {
 section.top-text .section-text {
     width: calc(100% - 50px);
     height: calc(40% - 50px);
+}
+
+section.supporters {
+    height: unset;
+}
+
+section.supporters .section-text {
+    width: calc(100% - 50px);
+}
+
+section.supporters .section-text .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+section.supporters .section-text .supporter img {
+    height: 3.5em;
+}
+
+
+@media (max-width: 600px) { 
+    
+    main.text-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5em;
+    }
+
+    section {
+        height: unset;
+    }
+
+    section.left-text, section.right-text {
+        flex-direction: column-reverse;
+    }
+
+    section.right-text .img-wrapper, section.left-text .img-wrapper {
+        width: 100%;
+        max-height: 40%;
+    }
+
+    section.right-text .section-text, section.left-text .section-text {
+        width: calc(100% - 30px);
+        height: unset;
+        /*min-height: calc(60% - 30px);*/
+    }
+
+    section.supporters .section-text .logos {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    section.supporters .section-text .logos a {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    section.supporters .section-text .logos img {
+        height: unset;
+        width: 40%;
+    }
+    
+
+    section form .wpcf7-form-control-wrap input, section form .wpcf7-form-control-wrap textarea {
+        font-size: 1.5em;
+        border: 2px solid #3b3b3b;
+        padding: 7px;
+        width: calc(100% - 18px);
+    }
 }
