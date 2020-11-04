@@ -24,3 +24,7 @@ main button {
     box-shadow: 0px 0px 15px 0px #00000045;
     outline: none;
 }
+
+figure.wp-block-gallery {
+    margin-top: 1em;
+}

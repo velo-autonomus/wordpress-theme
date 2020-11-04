@@ -3,28 +3,28 @@ section form {
     flex-direction: column;
 }
 
-section form p {
+section form.wpcf7 p {
     margin: 0px;
 }
 
-section form .wpcf7-form-control-wrap input, section form .wpcf7-form-control-wrap textarea {
+section form.wpcf7 .wpcf7-form-control-wrap input, section form .wpcf7-form-control-wrap textarea {
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-section form label {
+section form.wpcf7 label {
     font-size: 1.2em;
     margin-bottom: 5px;
 }
 
-section form input, form textarea {
+section form.wpcf7 input, form textarea {
     font-size: 1.5rem;
     border: 2px solid #3b3b3b;
     padding: 7px;
     width: 15em;
 }
 
-section form input[type='submit'] {
+section form.wpcf7 input[type='submit'] {
     width: 100%;
     cursor: pointer;
     background: black;
@@ -34,7 +34,7 @@ section form input[type='submit'] {
     font-size: 1.25em;
 }
 
-section form input[type="textarea"], form textarea {
+section form.wpcf7 input[type="textarea"], form textarea {
     height: 3em;
     font-family: Arial;
 }
