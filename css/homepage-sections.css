@@ -12,6 +12,14 @@ section#onboarding {
     height: 100vh;
 }
 
+section#landing-hero-section {
+    background: black;
+}
+
+section#landing-hero-section .img-wrapper img {
+    object-fit: contain;
+}
+
 section.left-text {
     flex-direction: row-reverse;
 }
