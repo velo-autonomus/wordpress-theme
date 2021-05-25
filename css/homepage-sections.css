@@ -116,6 +116,9 @@ section.supporters .section-text .supporter img {
     height: 3.5em;
 }
 
+img.size-full {
+	height: auto;
+}
 
 @media (max-width: 600px) { 
     
@@ -168,4 +171,8 @@ section.supporters .section-text .supporter img {
         padding: 7px;
         width: calc(100% - 18px);
     }
+
+    .wp-block-media-text__content {
+		padding: 0 0 !important;
+	}
 }

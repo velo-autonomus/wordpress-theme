@@ -86,6 +86,12 @@ header.hidden {
     color: white;
 }
 
+.mobileNav.open {
+    background-color: grey; 
+    opacity: 0.95;
+    z-index: 103;
+}
+
 .mobileNav .closeWrapper {
     display: flex;
     flex-direction: row-reverse;
