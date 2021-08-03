@@ -1,4 +1,5 @@
 <?php
+    include('customizer.php');
 
     function velo_theme_setup() {
         register_nav_menus( array(

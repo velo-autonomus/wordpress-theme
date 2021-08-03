@@ -9,5 +9,8 @@
     </head>
     <body>
         <nav>
+            <span id='company-name'><?php bloginfo('name') ?></span>
             <?php wp_nav_menu(array('menu'=>'top')) ?>
+            <div class='button'>Donate</div>
         </nav>
+        <div id='main-content'>
