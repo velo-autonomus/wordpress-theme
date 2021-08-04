@@ -4,7 +4,9 @@
     function velo_theme_setup() {
         register_nav_menus( array(
             'top'   => __( 'Top Menu', 'velo' ),
-            'footer'   => __( 'Footer Menu', 'velo' ),
+            'footer-1'   => __( 'Footer Menu 1', 'velo' ),
+            'footer-2'   => __( 'Footer Menu 2', 'velo' ),
+            'footer-3'   => __( 'Footer Menu 3', 'velo' ),
         ) );
     }
     add_action( 'after_setup_theme', 'velo_theme_setup' );    

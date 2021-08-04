@@ -9,6 +9,8 @@ $color-primary: #000;
 $color-default-bg: #fff;
 $color-gray-bg: #f2f2f2;
 
+$break-mobile: 630px;
+
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format("truetype");

@@ -124,27 +124,27 @@
   font-style: italic;
   font-display: swap; }
 
-nav {
+header nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-align: center;
       align-items: center; }
-  nav span#company-name {
+  header nav span#company-name {
     font-size: 1.35em;
     margin-left: 1em; }
-  nav ul.menu {
+  header nav ul.menu {
     list-style-type: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row; }
-    nav ul.menu li a {
+    header nav ul.menu li a {
       color: #5c5c5c;
       text-decoration: none; }
-    nav ul.menu li:not(:last-child) {
+    header nav ul.menu li:not(:last-child) {
       margin-right: 1em; }
-  nav #donate-button {
+  header nav #donate-button {
     margin-left: auto;
     margin-right: 1em; }

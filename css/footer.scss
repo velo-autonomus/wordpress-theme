@@ -1,0 +1,51 @@
+@import 'theme.scss';
+
+footer {
+    background-color: $color-gray-bg;
+    color: $color-light-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+    #footer-nav-wrapper {
+        display: flex;
+        margin-bottom: 3em;
+
+        nav {
+            padding: 0 20px;
+
+            ul {
+                list-style-type: none;
+
+                li a {
+                    text-decoration: none;
+                    color: $color-light-text;
+                }
+            }
+        }
+    }
+
+    #copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $break-mobile) {
+    footer {
+        padding: 50px 5px;
+
+        #footer-nav-wrapper {
+            flex-direction: column;
+
+            nav {
+                padding: 0;
+
+                ul {
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
