@@ -11,6 +11,6 @@
         <nav>
             <span id='company-name'><?php bloginfo('name') ?></span>
             <?php wp_nav_menu(array('menu'=>'top')) ?>
-            <div class='button'>Donate</div>
+            <div id='donate-button'><a class='velo-button' href='donate'>Donate</a></div>
         </nav>
         <div id='main-content'>

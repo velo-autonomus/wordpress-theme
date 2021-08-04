@@ -1,0 +1,32 @@
+@import 'theme.scss';
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span#company-name {
+        font-size: 1.35em;
+        margin-left: 1em;
+    }
+
+    ul.menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        li a {
+            color: $color-light-text;
+            text-decoration: none;
+        }
+
+        li:not(:last-child) {
+            margin-right: 1em;
+        }
+    }
+
+    #donate-button {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+}

@@ -1,0 +1,8 @@
+@import 'theme.scss';
+
+body {
+    margin: 0;
+    font-family: $default-font;
+    color: $color-default-text;
+    $background-color: $color-default-bg;
+}
