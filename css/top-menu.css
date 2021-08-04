@@ -134,16 +134,19 @@ header nav {
   header nav span#company-name {
     font-size: 1.35em;
     margin-left: 1em; }
-  header nav ul.menu {
+  header nav ul.menu,
+  header nav .menu ul {
     list-style-type: none;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row; }
-    header nav ul.menu li a {
+    header nav ul.menu li a,
+    header nav .menu ul li a {
       color: #5c5c5c;
       text-decoration: none; }
-    header nav ul.menu li:not(:last-child) {
+    header nav ul.menu li:not(:last-child),
+    header nav .menu ul li:not(:last-child) {
       margin-right: 1em; }
   header nav #donate-button {
     margin-left: auto;

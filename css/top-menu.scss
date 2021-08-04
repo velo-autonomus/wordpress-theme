@@ -10,7 +10,8 @@ header nav {
         margin-left: 1em;
     }
 
-    ul.menu {
+    ul.menu,
+    .menu ul {
         list-style-type: none;
         display: flex;
         flex-direction: row;
