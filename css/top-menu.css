@@ -131,9 +131,11 @@ header nav {
       flex-direction: row;
   -ms-flex-align: center;
       align-items: center; }
-  header nav span#company-name {
+  header nav a#company-name {
     font-size: 1.35em;
-    margin-left: 1em; }
+    margin-left: 1em;
+    color: #000;
+    text-decoration: none; }
   header nav ul.menu,
   header nav .menu ul {
     list-style-type: none;

@@ -10,7 +10,7 @@
     <body>
         <header>
             <nav>
-                <span id='company-name'><?php bloginfo('name') ?></span>
+                <a id='company-name' href='<?php echo get_home_url();?>'><?php bloginfo('name') ?></a>
                 <?php wp_nav_menu(array('menu'=>'top')) ?>
                 <div id='donate-button'><a class='velo-button' href='donate'>Donate</a></div>
             </nav>

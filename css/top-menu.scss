@@ -5,9 +5,11 @@ header nav {
     flex-direction: row;
     align-items: center;
 
-    span#company-name {
+    a#company-name {
         font-size: 1.35em;
         margin-left: 1em;
+        color: $color-default-text;
+        text-decoration: none;
     }
 
     ul.menu,
