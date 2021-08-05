@@ -133,7 +133,7 @@
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding-top: 20%;
+  padding-top: 20vh;
   /* Firefox */ }
   .velo-donation-wrapper h1 {
     letter-spacing: 0.2em;
