@@ -1,35 +1,119 @@
 @import 'theme.scss';
 
-header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 
-    a#company-name {
-        font-size: 1.35em;
-        margin-left: 1em;
-        color: $color-default-text;
-        text-decoration: none;
-    }
-
-    ul.menu,
-    .menu ul {
-        list-style-type: none;
+    nav {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        height: 60px;
+        background-color: white;
 
-        li a {
-            color: $color-light-text;
+        a#company-name {
+            font-size: 1.35em;
+            margin-left: 1em;
+            color: $color-default-text;
             text-decoration: none;
         }
 
-        li:not(:last-child) {
+        ul.menu,
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+
+            li a {
+                color: $color-light-text;
+                text-decoration: none;
+            }
+
+            li:not(:last-child) {
+                margin-right: 1em;
+            }
+        }
+
+        #donate-button {
+            margin-left: auto;
             margin-right: 1em;
+        }
+
+        #mobile-menu-button {
+            display: none;
+            margin-left: auto;
+            margin-right: 1em;
+            align-items: center;
+            cursor: pointer;
+
+            .close-menu-icon {
+                display: none;
+            }
         }
     }
 
-    #donate-button {
-        margin-left: auto;
-        margin-right: 1em;
+    #mobile-menu {
+        background: white;
+        display: none;
+        flex-direction: column;
+
+        ul.menu,
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5em;
+            padding: 0.5em 0.8em;
+            text-align: right;
+            margin: 0;
+
+            li {
+                margin-bottom: 0.25em;
+
+                a {
+                    color: $color-light-text;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #donate-button {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 1em 1.25em 1em;
+        }
+    }
+}
+
+@media screen and (max-width: $break-mobile) {
+    header nav {
+        ul.menu,
+        menu.ul,
+        #donate-button {
+            display: none;
+        }
+
+        #mobile-menu-button {
+            display: flex;
+        }
+    }
+
+    header.mobile-menu-open {
+        box-shadow: 0 0 15px 0 #5b697b33;
+
+        #mobile-menu {
+            display: flex;
+        }
+
+        #mobile-menu-button {
+            .open-menu-icon {
+                display: none;
+            }
+
+            .close-menu-icon {
+                display: unset;
+            }
+        }
     }
 }

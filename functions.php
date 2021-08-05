@@ -23,6 +23,7 @@
         wp_enqueue_style('donation', get_template_directory_uri().'/css/donation.css');
 
         wp_enqueue_script('donation-script', get_template_directory_uri().'/js/donation.js');
+        wp_enqueue_script('top-menu-script', get_template_directory_uri().'/js/top-menu.js');
     } else {
         
     }

@@ -124,32 +124,94 @@
   font-style: italic;
   font-display: swap; }
 
-header nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-align: center;
-      align-items: center; }
-  header nav a#company-name {
-    font-size: 1.35em;
-    margin-left: 1em;
-    color: #000;
-    text-decoration: none; }
-  header nav ul.menu,
-  header nav .menu ul {
-    list-style-type: none;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99; }
+  header nav {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
-        flex-direction: row; }
-    header nav ul.menu li a,
-    header nav .menu ul li a {
-      color: #5c5c5c;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 60px;
+    background-color: white; }
+    header nav a#company-name {
+      font-size: 1.35em;
+      margin-left: 1em;
+      color: #000;
       text-decoration: none; }
-    header nav ul.menu li:not(:last-child),
-    header nav .menu ul li:not(:last-child) {
+    header nav ul.menu,
+    header nav .menu ul {
+      list-style-type: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      header nav ul.menu li a,
+      header nav .menu ul li a {
+        color: #5c5c5c;
+        text-decoration: none; }
+      header nav ul.menu li:not(:last-child),
+      header nav .menu ul li:not(:last-child) {
+        margin-right: 1em; }
+    header nav #donate-button {
+      margin-left: auto;
       margin-right: 1em; }
+    header nav #mobile-menu-button {
+      display: none;
+      margin-left: auto;
+      margin-right: 1em;
+      -ms-flex-align: center;
+          align-items: center;
+      cursor: pointer; }
+      header nav #mobile-menu-button .close-menu-icon {
+        display: none; }
+  header #mobile-menu {
+    background: white;
+    display: none;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    header #mobile-menu ul.menu,
+    header #mobile-menu .menu ul {
+      list-style-type: none;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      font-size: 1.5em;
+      padding: 0.5em 0.8em;
+      text-align: right;
+      margin: 0; }
+      header #mobile-menu ul.menu li,
+      header #mobile-menu .menu ul li {
+        margin-bottom: 0.25em; }
+        header #mobile-menu ul.menu li a,
+        header #mobile-menu .menu ul li a {
+          color: #5c5c5c;
+          text-decoration: none; }
+    header #mobile-menu #donate-button {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      padding: 0 1em 1.25em 1em; }
+
+@media screen and (max-width: 630px) {
+  header nav ul.menu,
+  header nav menu.ul,
   header nav #donate-button {
-    margin-left: auto;
-    margin-right: 1em; }
+    display: none; }
+  header nav #mobile-menu-button {
+    display: -ms-flexbox;
+    display: flex; }
+  header.mobile-menu-open {
+    box-shadow: 0 0 15px 0 #5b697b33; }
+    header.mobile-menu-open #mobile-menu {
+      display: -ms-flexbox;
+      display: flex; }
+    header.mobile-menu-open #mobile-menu-button .open-menu-icon {
+      display: none; }
+    header.mobile-menu-open #mobile-menu-button .close-menu-icon {
+      display: unset; } }
