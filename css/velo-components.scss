@@ -4,7 +4,14 @@
     color: $color-text-on-primary;
     background-color: $color-primary;
     padding: 6px 30px;
-    border-radius: 20px;
+    border-radius: 10em;
     text-decoration: none;
     font-size: 0.85em;
+    transition: color 0.35s ease, background-color 0.35s ease;
+}
+
+.velo-button.disabled {
+    pointer-events: none;
+    background-color: $color-primary-disabled;
+    color: $color-text-on-disabled-primary;
 }
