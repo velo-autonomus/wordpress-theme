@@ -128,3 +128,10 @@ body {
   margin: 0;
   font-family: "Poppins";
   color: #000; }
+  body #main-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }

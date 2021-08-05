@@ -5,4 +5,8 @@
     <h1><?php echo get_theme_mod('homepage-slogan');?></h1>
 </div>
 
+<div id='front-page-content-wrapper'>
+    <?php the_content(); ?>
+</div>
+
 <?php get_footer(); ?>

@@ -16,3 +16,18 @@
     font-size: 6em;
     max-width: 6em;
     line-height: 1; }
+
+#front-page-content-wrapper {
+  max-width: 55em; }
+  #front-page-content-wrapper .wp-block-media-text {
+    grid-template-rows: 30em; }
+    #front-page-content-wrapper .wp-block-media-text figure {
+      padding: 0 10px; }
+      #front-page-content-wrapper .wp-block-media-text figure img {
+        -o-object-fit: contain;
+           object-fit: contain; }
+    #front-page-content-wrapper .wp-block-media-text .wp-block-media-text__content h2 {
+      font-size: 3em; }
+    #front-page-content-wrapper .wp-block-media-text .wp-block-media-text__content p {
+      font-size: 1.25em;
+      line-height: 1.2; }

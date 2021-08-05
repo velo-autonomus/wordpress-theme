@@ -5,4 +5,10 @@ body {
     font-family: $default-font;
     color: $color-default-text;
     $background-color: $color-default-bg;
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
