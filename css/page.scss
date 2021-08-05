@@ -6,9 +6,29 @@ body {
     color: $color-default-text;
     $background-color: $color-default-bg;
 
-    #main-content {
+    #main-content-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+
+        #main-content {
+            display: flex;
+            flex-direction: column;
+            max-width: 1130px;
+            width: calc(100% - 32px);
+            padding: 0 16px;
+            margin-bottom: 6em;
+
+            h1.page-title {
+                margin-top: 1.5em;
+                font-size: 3em;
+            }
+        }
+    }
+
+    .navbar-spacer {
+        width: 100%;
+        height: 60px;
     }
 }

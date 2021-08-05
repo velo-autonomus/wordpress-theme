@@ -23,4 +23,5 @@
                 <div id='donate-button'><a class='velo-button' href='donate'>Donate</a></div>
             </div>
         </header>
-        <div id='main-content'>
+        <div id='main-content-wrapper'>
+            <div id='main-content'>

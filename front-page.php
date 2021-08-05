@@ -6,7 +6,9 @@
 </div>
 
 <div id='front-page-content-wrapper'>
-    <?php the_content(); ?>
+    <div id='front-page-content'>
+        <?php the_content(); ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>

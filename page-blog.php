@@ -1,6 +1,6 @@
 <?php /* Template Name: Blog-Template */
 get_header(); ?>
-
+<div class='navbar-spacer'></div>
 <?php
 the_title();
 the_content();
