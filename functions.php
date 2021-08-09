@@ -22,6 +22,7 @@
         wp_enqueue_style('front-page', get_template_directory_uri().'/css/front-page.css');
         wp_enqueue_style('donation', get_template_directory_uri().'/css/donation.css');
         wp_enqueue_style('blog', get_template_directory_uri().'/css/blog.css');
+        wp_enqueue_style('single-post', get_template_directory_uri().'/css/single-post.css');
 
         wp_enqueue_script('donation-script', get_template_directory_uri().'/js/donation.js');
         wp_enqueue_script('top-menu-script', get_template_directory_uri().'/js/top-menu.js');

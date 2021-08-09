@@ -1,0 +1,13 @@
+@import 'theme.scss';
+
+.single-article-title {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+.single-article-date {
+    color: $color-light-text;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}

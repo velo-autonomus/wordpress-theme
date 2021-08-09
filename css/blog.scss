@@ -127,3 +127,14 @@
         }
     }
 }
+
+@media screen and (max-width: 780px) {
+    #blog-articles-wrapper,
+    #contact-us-now-wrapper {
+        .blog-articles .blog-article {
+            width: 100%;
+            // height: 35em;
+            // margin-bottom: var(--article-spacing);
+        }
+    }
+}
