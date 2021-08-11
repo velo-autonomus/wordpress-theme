@@ -1,0 +1,22 @@
+@import 'theme.scss';
+
+form.wpcf7-form {
+    input,
+    textarea {
+        border: 1px solid black;
+        padding: 0.8em;
+        font-size: 1rem;
+        border-radius: 5px;
+        width: calc(100% - 1.6em);
+        max-width: 30em;
+    }
+
+    input[type='submit'] {
+        width: 100%;
+        max-width: calc(30rem + 1.6rem);
+        background: $color-primary;
+        color: $color-text-on-primary;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+    }
+}
