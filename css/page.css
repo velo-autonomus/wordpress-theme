@@ -148,6 +148,11 @@ body {
     body #main-content h1.page-title {
       margin-top: 1.5em;
       font-size: 3em; }
+    body #main-content a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.1em; }
   body .navbar-spacer {
     width: 100%;
     height: 60px; }
