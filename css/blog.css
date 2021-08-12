@@ -188,11 +188,11 @@
         grid-area: title;
         font-size: calc(2 * var(--fluid-em));
         font-weight: bold;
-        padding: 0 20px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+        padding: 15px 20px 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: calc(100% - 40px); }
       #blog-articles-wrapper .blog-articles .blog-article .article-date,
       #contact-us-now-wrapper .blog-articles .blog-article .article-date {
         grid-area: date;
