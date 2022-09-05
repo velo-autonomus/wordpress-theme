@@ -16,7 +16,7 @@
                 <?php echo get_the_post_thumbnail( $the_query->posts[0] );?>
             </div>
             <h1><?php echo $the_query->posts[0]->post_title;?></h1>
-            <div><?php echo (new DateTime($the_query->posts[0]->post_date))->format('d.m.yy');?></div>
+            <div><?php echo (new DateTime($the_query->posts[0]->post_date))->format('d.m.Y');?></div>
             <p><?php echo get_the_excerpt($the_query->posts[0]);?></p>
             <div class='article-read-more'><a href='<?php echo get_permalink($the_query->posts[0]); ?>'> Read more ></a></div>
         </div>

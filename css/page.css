@@ -148,7 +148,7 @@ body {
     body #main-content h1.page-title {
       margin-top: 1.5em;
       font-size: 3em; }
-    body #main-content a {
+    body #main-content a:not(.velo-button) {
       text-decoration: none;
       color: #000;
       font-weight: bold;
